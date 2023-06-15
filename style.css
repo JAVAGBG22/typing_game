@@ -7,3 +7,64 @@
   --lightgreen: #d8e267;
   --pink: #f6d8f7;
 }
+
+body {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+
+select {
+  width: 200px;
+  padding: 3px;
+  border-radius: 4px;
+  appearance: none;
+  font-weight: 500;
+}
+
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.settings-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkgreen);
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container {
+  background-color: var(--darkgreen);
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
